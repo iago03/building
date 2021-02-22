@@ -1,0 +1,154 @@
+footer{
+    background-color: #000000;
+    padding: 55px 0px 65px;
+}
+
+footer .content{
+    width: 66%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+footer .content aside{
+    width: 42%;
+}
+
+footer .content h6{
+    font-size: 17px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    color: #808080;
+    margin: 0px 0px 35px;
+}
+
+footer .content .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+footer .content .contact div{
+    width: 47%;
+}
+
+footer .content p{
+    color: #808080;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 3px;
+}
+
+footer .right {
+    position: relative;
+}
+
+footer .right .form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+footer .right .form div{
+    width: 49%;
+}
+
+footer .right .form input,textarea{
+    background-color: #2B2B2B!important;
+    font-size: 13px!important;
+    color: rgb(200, 200, 200)!important;
+    font-weight: 600!important;
+    padding: 3px 3px 3px 10px!important;
+    border-radius: 0px!important;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 5px;
+}
+
+footer .right .form input:last-child{
+    margin: 0px;
+}
+
+footer .right .form  textarea{
+    margin: 0px;
+    resize: none;
+    height: 100%;
+    padding-top: 7px!important;
+}
+
+footer .right .form input:hover, textarea:hover{
+    border: 2px solid rgb(200, 200, 200)!important;
+}
+
+footer .right .form input::placeholder, footer .right .form  textarea::placeholder{
+    color: rgb(200, 200, 200);
+    
+}
+
+footer .right .btn{
+    float: right;
+    border: none;
+    color: white;
+    padding: 5px 18px;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(149, 123, 95, 1) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+}
+
+footer .right .btn:hover{
+    background: rgb(197, 163, 126) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+}
+
+footer .right .icon{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+footer .right .icon i{
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+/* style for form input */
+.danger{
+    border: 2px solid red!important;
+}
+/* style for form input */
+
+
+/* respons */
+@media screen and (max-width:1320px){
+    footer .content{
+        width: 90%;
+    }
+
+    footer .content .right .icon{
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:970px){
+    footer .content aside{
+        width:100%;
+        margin-bottom: 50px;
+    }
+
+    footer .content .left{
+        text-align: center;
+    }
+
+    footer .content .left .contact div{
+        width: 100%;
+    }
+
+    footer .content .right .form div{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

@@ -1,0 +1,59 @@
+<footer>
+    <section class="content">
+      <aside class="left">
+        <h6>СВЯЗАТЬСЯ:</h6>
+        <article class="contact">
+          <div>
+            <p>Тел. +7 (495) 000-00-00</p>
+            <p>Email: info@mysite.ru</p>
+          </div>
+          <div>
+            <p>Ул. Арбат, 1а</p>
+            <p>Москва, Россия</p>
+          </div>
+        </article>
+        <p>© 2023 Архитектурная компания «Микеланджело».</p>
+        <p>Сайт создан на Wix.com</p>
+      </aside>
+
+      <aside class="right">
+        <h6>НАПИСАТЬ:</h6>
+        <form #frm="ngForm">
+            <article class="form">
+                <div>
+                  <input
+                  [(ngModel)]="formItem.Name" 
+                  #userName="ngModel"
+                  [ngClass]="{'danger':userName.touched && userName.invalid}"
+                  required type="text" name="FirstName" class="form-control" placeholder="Имя">
+
+                  <input
+                  [(ngModel)]="formItem.Email" 
+                  #userEmail="ngModel"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  [ngClass]="{'danger':userEmail.touched && userEmail.invalid}"
+                  required type="email" name="Email" class="form-control" placeholder="Эл. почта">
+                </div>
+                <div>
+                  <textarea
+                  [(ngModel)]="formItem.Text" 
+                  #userText="ngModel"
+                  [ngClass]="{'danger':userText.touched && userText.invalid}"
+                  required class="form-control" name="Text" placeholder="Добавьте сообщение..."></textarea>
+                </div>
+              </article>
+              <button
+              (click)="onClick(frm)"
+              type="button" class="btn" [disabled]="frm.invalid">Отправить</button>
+        </form>
+
+
+        <article class="icon">
+          <i class="fab fa-vk"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+        </article>
+      </aside>
+
+    </section>
+  </footer>

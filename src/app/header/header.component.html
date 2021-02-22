@@ -1,0 +1,46 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="logo">
+            <h1><a 
+              routerLink="/"
+              routerLinkActive='active'
+              [routerLinkActiveOptions]="{exact:true}"  
+            >AK</a></h1>
+        </div>
+        <h1><a class="navbar-brand"
+          routerLink="/"
+          routerLinkActive='active'
+          [routerLinkActiveOptions]="{exact:true}"
+          >МИКЕЛАНДЖЕЛО</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="mr-auto"></ul>
+          <ul class="navbar-nav mr-right">
+            <li class="nav-item">
+              <a class="nav-link active" 
+              routerLink="/"
+              routerLinkActive='active'
+              data-toggle="collapse" data-target=".navbar-collapse.show"
+              [routerLinkActiveOptions]="{exact:true}"
+              >ГЛАВНАЯ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" 
+              routerLink="portfolio"
+              routerLinkActive='active'
+              data-toggle="collapse" data-target=".navbar-collapse.show"
+              >ПОРТФОЛИО</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" 
+              routerLink="about-us"
+              routerLinkActive='active'
+              data-toggle="collapse" data-target=".navbar-collapse.show"
+              >О НАС</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>

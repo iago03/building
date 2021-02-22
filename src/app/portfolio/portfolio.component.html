@@ -1,0 +1,10 @@
+<main>
+    <section class="portfolio">
+     <h2>ПРОЕКТЫ</h2>
+     <article class="portfolio-card-area">
+        <app-portfolio-card
+        *ngFor="let item of portfolioCardItem" [portfolioCard]="item"
+        ></app-portfolio-card>
+     </article>
+    </section>
+ </main>

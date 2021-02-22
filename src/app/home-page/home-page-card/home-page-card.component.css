@@ -1,0 +1,78 @@
+.card{
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #c7c7c7;
+    padding: 60px 0px;
+}
+
+.card .row{
+    justify-content: space-between;
+}
+
+.card .row .img{
+    width: 50%;
+    max-height: 360px;
+}
+
+.card .row .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .row .text{
+    width: 45%;
+}
+
+.card .row .text .card-body span{
+    display: inline-block;
+    margin: 0px 0px 22px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.25em
+}
+
+.card .row .text .card-body h5{
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    color: #957B5F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.card .row .text .card-body p{
+    font-size: 15px;
+    line-height: 1.4em;
+    margin: 21px 0px 50px;
+    font-weight: 600;
+}
+
+.card .row .text .card-body a{
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+    color: #c7c7c7!important;
+}
+
+.card .row .text .card-body a:hover{
+    text-decoration: none;
+    color: #957B5F!important;
+}
+
+
+@media screen and (max-width:900px){
+    .card .row{
+        flex-direction: column;
+    }
+
+    .card .row .img, .card .row .text{
+        width: 100%;
+    }
+
+    .card .row .text{
+        padding: 0px;
+    }
+}

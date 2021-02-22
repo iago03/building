@@ -1,0 +1,27 @@
+main{
+    background: url('../../assets/img/img.webp') center / cover no-repeat fixed;
+    padding-top: 800px;
+}
+
+main .content{
+    background-color: #2B2B2B;    
+
+}
+
+main .content .cards-area{
+    width: 66%;
+    margin: 0px auto;
+    padding-top: 126px;
+}
+
+@media screen and (max-width:990px){
+    main{
+        padding-top: 500px;
+    }
+}
+
+@media screen and (max-width:600px){
+    main .content .cards-area{
+        width: 90%;
+    }
+}

@@ -1,0 +1,18 @@
+main{
+    padding-top: 180px;
+}
+
+main .portfolio, .about{
+    width: 66%;
+    margin: 0px auto;
+}
+
+main .portfolio-card-area{
+    padding: 60px 0px;
+}
+
+@media screen and (max-width:800px){
+    main .portfolio{
+        width: 95%;
+    }
+}

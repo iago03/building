@@ -1,0 +1,63 @@
+main{
+    margin: 0px;
+    padding: 180px 0px 0px;
+}
+
+main .about{
+    width: 66%;
+    margin: 0px auto;
+}
+
+main .about p{
+    font-size: 15px;
+    line-height: 1.4em;
+    margin: 0px 0px 20px;
+    font-weight: 600;
+    color: #c7c7c7;
+}
+
+main .about .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main .about .title .left{
+    width: 43%;
+}
+
+main .about .title .right{
+    width: 55%;
+}
+
+main .about-card-area{
+    padding: 60px 0px;
+}
+
+@media screen and (max-width:1200px){
+    main .about{
+        width: 95%;
+    }
+
+    main .about h2{
+        text-align: center;
+    }
+
+    main .about .title{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .about .title .left{
+        margin-bottom: 40px;
+    }
+
+    main .about .title .left, main .about .title .right{
+        width: 100%;
+    }
+
+    main .about p{
+        font-size: 18px;
+    }
+}

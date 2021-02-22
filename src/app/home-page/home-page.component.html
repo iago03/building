@@ -1,0 +1,10 @@
+<main>
+    <section class="content">
+        <article class="cards-area">
+            <h2>ИЗБРАННЫЕ ПРОЕКТЫ</h2>
+            <app-home-page-card
+            *ngFor="let item of homePageBuildingItem" [homePageBuilding]="item"
+            ></app-home-page-card>
+        </article>
+    </section>
+</main>

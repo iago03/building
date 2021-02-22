@@ -1,0 +1,82 @@
+header {
+    width: 66%;
+    padding-top: 40px;
+    margin: 0px auto;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-light .navbar-toggler{
+    border: 3px solid #957B5F;;
+}
+
+header .navbar{
+    padding: 0px;
+}
+
+
+header .logo{
+    padding: 10px;
+    border: 3px solid #957B5F;
+    margin-right: 30px;
+}
+
+header .logo a:hover{
+    text-decoration: none;
+}
+
+header h1 a,header ul li a:hover,header .active{
+    color: #957B5F!important;
+}
+
+header h1{
+    font-size: 21px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+}
+
+header ul li {
+    margin-left: 60px;
+}
+
+header ul li a{
+    color: #808080;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* burger button icon */
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(149,123,95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+/* burger button icon */
+
+
+
+/* respon */
+
+@media screen and (max-width:1150px){
+    header{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:990px){
+    header .navbar .navbar-collapse{
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:400px){
+    header .navbar .logo{
+        display: none;
+    }
+}
+

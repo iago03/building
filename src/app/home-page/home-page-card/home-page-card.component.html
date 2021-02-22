@@ -1,0 +1,22 @@
+<div 
+*ngIf="homePageBuilding.Chosen"
+class="card">
+    <div class="row no-gutters">
+      <div class="img">
+        <a 
+        routerLink="/about-building/{{homePageBuilding.Id}}"
+        ><img [src]="homePageBuilding.Img"></a>
+      </div>
+      <div class="text">
+        <div class="card-body">
+          <span>{{homePageBuilding.Data | textFormaing:6}}</span>
+          <h5 class="card-title">{{homePageBuilding.Name}}</h5>
+          <p class="card-text">{{homePageBuilding.Description | textFormaing:100}} ...</p>
+          <a 
+          routerLink="/about-building/{{homePageBuilding.Id}}"
+          >Смотреть</a>
+        </div>
+      </div>
+    </div>
+</div>
+  

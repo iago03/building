@@ -1,0 +1,101 @@
+main .project{
+    width: 66%;
+    margin: 0px auto;
+    padding: 180px 0px 0px;
+}
+
+main .project img{
+    max-height: 550px;
+    object-fit: cover;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 7%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+
+main .project .text{
+    padding: 45px 0px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .project .text .left{
+    width: 46%;
+    padding-right: 90px;
+}
+
+main .project .text .left span{
+    color: #c7c7c7;
+    display: block;
+    margin: 0px 0px 10px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.25em
+}
+
+main .project .text .left h5{
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    color: #957B5F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0px 0px 25px;
+}
+
+main .project .text .left a{
+    display: inline-block;
+    margin-top: 70px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.4s;
+    color: #c7c7c7!important;
+}
+
+main .project .text .left a:hover{
+    color: #957B5F!important;
+    text-decoration: none;
+}
+
+main .project .text .right{
+    width: 52%;
+}
+
+main .project .text .right p{
+    margin-bottom: 20px;
+    color: #c7c7c7;
+}
+
+
+/* respons */
+
+@media screen and (max-width:1150px){
+    main .project{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px){
+    main .project .text div{
+        width: 100%!important;
+    }
+
+    main .project .text .left{
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    main .project .text .left a{
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid #957B5F;
+;
+    }
+}
